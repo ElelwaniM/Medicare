@@ -1,0 +1,29 @@
+<h2 class="text-center">Order List</h2>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>OrderId</th>
+      <th>UserId</th>
+      <th>MedicineId</th>
+      <th>Quantity</th>
+      <th>OrderTime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <td>{{ order.OrderId }}</td>
+      <td>{{ order.UserId }}</td>
+      <td>{{ order.MedicineId }}</td>
+      <td>{{ order.Quantity }}</td>
+      <td>{{ order.OrderTime }}</td>
+      <td>
+        <button type="submit" class="btn btn-info">Mark as delivered</button>        
+      </td>
+      <td>
+        <button type="submit" class="btn btn-danger">Remove from order</button>        
+      </td>
+    </tr>
+  </tbody>
+</table>
+

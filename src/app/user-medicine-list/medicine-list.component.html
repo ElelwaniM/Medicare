@@ -1,0 +1,34 @@
+<h2 class="text-center">Medicine List</h2>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>MedicineId</th>
+      <th>ProductName</th>
+      <th>PharmaCompany</th>
+      <th>Dosage</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>IsActive</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let medicine of medicines">
+      <td>{{ medicine.MedicineId }}</td>
+      <td>{{ medicine.ProductName }}</td>
+      <td>{{ medicine.PharmaCompany }}</td>
+      <td>{{ medicine.Dosage }}</td>
+      <td>{{ medicine.Quantity }}</td>
+      <td>{{ medicine.Price }}</td>
+      <td>{{ medicine.IsActive }}</td>
+      <td>{{ medicine.Description }}</td>
+      <td>
+        <button type="submit" class="btn btn-success">Add to cart</button>        
+      </td>
+     
+      
+    </tr>
+  </tbody>
+</table>

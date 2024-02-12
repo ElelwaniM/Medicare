@@ -1,0 +1,45 @@
+<div class="col-md-8 offset-md-3">
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+      <label for="medicineId">Medicine ID</label>
+      <input type="text" class="form-control" [(ngModel)]="medicine.MedicineId" id="medicineId" name="medicineId" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="productName">Product Name</label>
+      <input type="text" class="form-control" [(ngModel)]="medicine.ProductName" id="productName" name="productName" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="pharmaCompany">Pharma Company</label>
+      <input type="text" class="form-control" [(ngModel)]="medicine.PharmaCompany" id="pharmaCompany" name="pharmaCompany" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="dosage">Dosage</label>
+      <input type="text" class="form-control" [(ngModel)]="medicine.Dosage" id="dosage" name="dosage" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" class="form-control" [(ngModel)]="medicine.Quantity" id="quantity" name="quantity" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="number" class="form-control" [(ngModel)]="medicine.Price" id="price" name="price" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="isActive">Is Active</label>
+      <input type="checkbox" class="form-control" [(ngModel)]="medicine.IsActive" id="isActive" name="isActive">
+    </div>
+  
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea class="form-control" [(ngModel)]="medicine.Description" id="description" name="description"></textarea>
+    </div>
+  
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

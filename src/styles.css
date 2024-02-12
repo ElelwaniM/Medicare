@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    flex: 0 0 33.33%;
+    padding: 10px;
+  }
+  
